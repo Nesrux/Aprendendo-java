@@ -10,7 +10,7 @@ public static void main(String[] args) {
 	var p2 = new Produto();
 	p2.Nome = "Caneta azul";
 	p2.preco = 1.25;
-	p2.desconto = 0.1;
+	Produto.desconto = 0.29;
 	
 	System.out.println(p1.Nome);
 	System.out.println(p2.desconto); 
@@ -31,7 +31,7 @@ public static void main(String[] args) {
 	
 	//Aula 018
 	//usando o contrutor feito por mim;
-	Produto teste1 = new Produto("lapis", 1.50, 0);
+	Produto teste1 = new Produto("lapis", 1.50);
 	System.out.println("\n" + teste1.desconto);
 	
 	

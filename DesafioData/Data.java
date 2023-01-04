@@ -22,24 +22,24 @@ public class Data{
 */	
 	//Feito com o professor;
 	
-	int dia;
-	int ano;
-	String mes;
+	public int dia;
+	public int ano;
+	public String mes;
 	
-	Data(){
+	public Data(){
 		dia = 1;
 		mes = "janeiro";
 		ano = 1970;
 				
 	}
 	
-	Data(int diaF, String mesF, int anoF){
+	public Data(int diaF, String mesF, int anoF){
 		dia = diaF;
 		mes = mesF;
 		ano = anoF;
 	}
 	
-	String dataFormatada() {
+	 public String dataFormatada() {
 		return String.format("%d/%s/%d", dia, mes, ano);
 	}
 }

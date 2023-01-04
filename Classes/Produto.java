@@ -3,13 +3,11 @@ package Classes;
 public class Produto {
 	String Nome;
 	double preco;
-	double desconto;
+	static double desconto = 0.25;
 	
-	
-	Produto(String NomeDoProduto, double precoInicial, double descontoPadrao){
+	Produto(String NomeDoProduto, double precoInicial){
 		Nome = NomeDoProduto;
 		preco = precoInicial;
-		desconto = descontoPadrao;
 	}
 	//Construtor padrão do java
 	Produto(){}
