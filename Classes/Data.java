@@ -27,9 +27,10 @@ public class Data {
 		String mes;
 		
 		Data(){
-			dia = 1;
-			mes = "janeiro";
-			ano = 1970;
+			//dia = 1;
+			//mes = "janeiro";
+			//ano = 1970;
+			this(1, "marco", 2010);//Chamando um constructor dentro de outro constructor
 					
 		}
 		
@@ -40,7 +41,8 @@ public class Data {
 		}
 		
 		String dataFormatada() {
-			return String.format("%d/%s/%d", this.dia, this.mes, this.ano);
+			final String formato = "%d/%s/%d";
+			return String.format(formato, this.dia, this.mes, this. ano);
 		}
 	}
 
